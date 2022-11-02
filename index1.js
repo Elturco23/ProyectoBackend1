@@ -22,10 +22,12 @@ const route1 = require('./routeUsuarios')
 const route2= require('./routePublicaciones')
 const route3= require('./routeSeguidores')
 const route4= require('./routeLikes')
+const route5= require('./routeTimeline')
 app.use("/user", route1)
 app.use("/tweet", route2)
 app.use("/follower", route3)
 app.use("/like", route4)
+app.use("/timeline", route5)
 // ABRIR PUERTO PARA APP
 app.listen(3001, () => console.log("Hola"));
 
